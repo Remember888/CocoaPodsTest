@@ -15,6 +15,7 @@
 		DC5106EE1D82657F00C3064A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5106EC1D82657F00C3064A /* LaunchScreen.storyboard */; };
 		DC5106F91D82657F00C3064A /* CocoaPodsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5106F81D82657F00C3064A /* CocoaPodsTestTests.m */; };
 		DC5107041D82657F00C3064A /* CocoaPodsTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5107031D82657F00C3064A /* CocoaPodsTestUITests.m */; };
+		DC5107151D8266B300C3064A /* ToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5107141D8266B300C3064A /* ToolView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		DC5106FF1D82657F00C3064A /* CocoaPodsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaPodsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5107031D82657F00C3064A /* CocoaPodsTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaPodsTestUITests.m; sourceTree = "<group>"; };
 		DC5107051D82657F00C3064A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5107131D8266B300C3064A /* ToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolView.h; sourceTree = "<group>"; };
+		DC5107141D8266B300C3064A /* ToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		DC5106DD1D82657F00C3064A /* CocoaPodsTest */ = {
 			isa = PBXGroup;
 			children = (
+				DC5107121D82669800C3064A /* Tools */,
+				DC5107111D82669000C3064A /* Class */,
 				DC5106E11D82657F00C3064A /* AppDelegate.h */,
 				DC5106E21D82657F00C3064A /* AppDelegate.m */,
 				DC5106E41D82657F00C3064A /* ViewController.h */,
@@ -138,6 +143,22 @@
 				DC5107051D82657F00C3064A /* Info.plist */,
 			);
 			path = CocoaPodsTestUITests;
+			sourceTree = "<group>";
+		};
+		DC5107111D82669000C3064A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		DC5107121D82669800C3064A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DC5107131D8266B300C3064A /* ToolView.h */,
+				DC5107141D8266B300C3064A /* ToolView.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +296,7 @@
 			files = (
 				DC5106E61D82657F00C3064A /* ViewController.m in Sources */,
 				DC5106E31D82657F00C3064A /* AppDelegate.m in Sources */,
+				DC5107151D8266B300C3064A /* ToolView.m in Sources */,
 				DC5106E01D82657F00C3064A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,6 +523,7 @@
 				DC51070A1D82657F00C3064A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC51070B1D82657F00C3064A /* Build configuration list for PBXNativeTarget "CocoaPodsTestTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +532,7 @@
 				DC51070D1D82657F00C3064A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC51070E1D82657F00C3064A /* Build configuration list for PBXNativeTarget "CocoaPodsTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +541,7 @@
 				DC5107101D82657F00C3064A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
