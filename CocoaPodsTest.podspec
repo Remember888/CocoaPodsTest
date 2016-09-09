@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "CocoaPodsTest"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Just a test sample"
 
   s.description  = <<-DESC  
@@ -41,16 +41,11 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Rose613/CocoaPodsTest.git", :branch => "master" }
-
+ # s.source  = { :git => "https://github.com/Rose613/CocoaPodsTest.git", :branch => "master" }
+s.source       = { :git => "https://github.com/Rose613/CocoaPodsTest.git", :tag => s.version }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  CocoaPods is smart about how it includes source code. For source files
-  #  giving a folder will include any swift, h, m, mm, c & cpp files.
-  #  For header files it will include any header in the folder.
-  #  Not including the public_header_files will make all headers public.
-  #
+
 
   s.source_files  = "CocoaPodsTest/CocoaPodsTest/Tools/**/*.{h,m}"
  # s.exclude_files = "Classes/Exclude"
@@ -80,10 +75,7 @@ Pod::Spec.new do |s|
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If your library depends on compiler flags you can set them in the xcconfig hash
-  #  where they will only apply to your library. If you depend on other Podspecs
-  #  you can include multiple dependencies to ensure it works.
+
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
